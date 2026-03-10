@@ -1,0 +1,19 @@
+// Inicio
+console.log("Conectado a js...");
+
+/* Bloque 1: Calentamiento (Lógica Básica)
+1. El Portero Digital
+Crea una variable edad. Si la edad es 18 o más, muestra por consola: 
+"Acceso permitido a la App". Si es menor, muestra: "Acceso denegado: necesitas ser mayor de edad".
+2. Validador de Nombres
+Declara una variable nombre.
+Si el nombre no está vacío, crea un arreglo llamado 
+usuarios y agrega el nombre usando .push().
+Si está vacío, muestra: "Error: El nombre no puede estar en blanco".
+ */
+
+function calentamiento() {
+
+
+
+}
