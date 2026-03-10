@@ -68,7 +68,7 @@ Si el rol es "Admin", agrega el nombre al inicio de la lista
 con .unshift() para que tenga prioridad.
 Si no es Admin, agrégalo al final con .push(). */
 
-function () {
+function prioridad() {
 
 
 }
