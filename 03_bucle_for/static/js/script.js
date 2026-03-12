@@ -70,9 +70,14 @@ function filtroInventario() {
     let productos = ["Teclado", "Mouse", "Agotado", "Monitor", "Agotado", "Audífonos"];
     const container = document.getElementById('resultadoContainer4');
     const resultado = document.getElementById('result4');
-    for () {
-
+    let disponibles = [];
+    resultado.textContent = "";
+    for (let i = 0; i < productos.length; i++) {
+        if (productos[i] !== "Agotado") {
+            disponibles.push[productos[i]]
+        }
     }
+    resultado.textContent = `Productos disponibles: ${disponibles}`
     container.classList.remove('d-none');
 }
 
