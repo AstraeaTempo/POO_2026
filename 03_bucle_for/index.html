@@ -1,0 +1,164 @@
+<!-- Inicio -->
+<!DOCTYPE html>
+<!-- Idioma -->
+<html lang="es">
+
+<!-- cabeza -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Autor/a -->
+    <meta name="Author" content="javierazapata@liceovvh.cl">
+    <title>Bucle for</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container p-2 d-flex gap-3 flex-wrap">
+        <div class="card" style="width: 18rem;">
+            <img src="." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 1</h5>
+                <p class="card-text">...</p>
+                <a href="#" class="btn btn-primary" onclick="validarEdad()">El Portero Digital</a>
+                <div Id="resultadoContainer" class="mt-4 d-none">
+                    <h5>Resultados:</h5>
+                    <div Id="result1" class="alert alert-success fw-bold">
+                        <!-- falta -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 2</h5>
+                <p class="card-text">...</p>
+                <a href="#" class="btn btn-primary" onclick="filaEspera()">Validador de Nombres</a>
+                <div Id="resultadoContainer" class="mt-4 d-none">
+                    <h5>Resultados:</h5>
+                    <div Id="result2" class="alert alert-success fw-bold">
+                        <!-- falta -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 3</h5>
+                <p class="card-text">...</p>
+                <a href="#" class="btn btn-primary" onclick="reordenarDatos()">El Filtro de Duplicados</a>
+                <div Id="resultadoContainer" class="mt-4 d-none">
+                    <h5>Resultados:</h5>
+                    <div Id="result3" class="alert alert-success fw-bold">
+                        <!-- falta -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 4</h5>
+                <p class="card-text">...</p>
+                <a href="#" class="btn btn-primary" onclick="controlStock()">Control de Stock Máximo</a>
+                <div Id="resultadoContainer" class="mt-4 d-none">
+                    <h5>Resultados:</h5>
+                    <div Id="result4" class="alert alert-success fw-bold">
+                        <!-- falta -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 5</h5>
+                <p class="card-text">...</p>
+                <a href="#" class="btn btn-primary" onclick="operarIntruso()">Limpieza de Datos</a>
+                <div Id="resultadoContainer" class="mt-4 d-none">
+                    <h5>Resultados:</h5>
+                    <div Id="result5" class="alert alert-success fw-bold">
+                        <!-- falta -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 6</h5>
+                <p class="card-text">...</p>
+                <a href="#" class="btn btn-primary" onclick="traducirAcciones()">Acceso VIP</a>
+                <div Id="resultadoContainer" class="mt-4 d-none">
+                    <h5>Resultados:</h5>
+                    <div Id="result6" class="alert alert-success fw-bold">
+                        <!-- falta -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 7</h5>
+                <p class="card-text">...</p>
+                <a href="#" class="btn btn-primary" onclick="CalificacionChile()"> Sistema de Calificaciones
+                    Chile</a>
+                <div Id="resultadoContainer" class="mt-4 d-none">
+                    <h5>Resultados:</h5>
+                    <div Id="result7" class="alert alert-success fw-bold">
+                        <!-- falta -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 8</h5>
+                <p class="card-text">...</p>
+                <a href="#" class="btn btn-primary" onclick="invitados()">Buscador de Invitados</a>
+                <div Id="resultadoContainer" class="mt-4 d-none">
+                    <h5>Resultados:</h5>
+                    <div Id="result8" class="alert alert-success fw-bold">
+                        <!-- falta -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
