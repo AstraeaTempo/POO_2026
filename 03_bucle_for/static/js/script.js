@@ -167,7 +167,6 @@ function parrafosAdvertencia() {
 
     }
 
-
     result8.textContent = resultado.join(" - ");
     container.classList.remove('d-none');
 }
