@@ -38,7 +38,11 @@
             <img src="." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Ejercicio 1</h5>
-                <p class="card-text">...</p>
+                <p class="card-text">Selecciona el párrafo con el id pantalla.
+                    Crea un ciclo for que vaya del 1 al 10.
+                    En cada vuelta del ciclo,
+                    agrega (concatena con +=) el número actual seguido de un guion
+                    (ej: "1 - 2 - 3 - ") al párrafo.</p>
                 <a href="#" class="btn btn-primary" onclick="contadorPantalla()">El Contador en Pantalla</a>
                 <div Id="resultadoContainer1" class="mt-4 d-none">
                     <h5>Resultados:</h5>
@@ -53,7 +57,10 @@
             <img src="." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Ejercicio 2</h5>
-                <p class="card-text">...</p>
+                <p class="card-text">Tienes la siguiente lista de estudiantes
+                    Selecciona el párrafo y límpialo primero
+                    asignándole un texto vacío, Usa un ciclo for para recorrer.
+                    En cada iteración, agrega el nombre del estudiante</p>
                 <a href="#" class="btn btn-primary" onclick="asistenciaAutomatica()">Lista de Asistencia Automática</a>
                 <div Id="resultadoContainer2" class="mt-4 d-none">
                     <h5>Resultados:</h5>
@@ -68,8 +75,11 @@
             <img src="." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Ejercicio 3</h5>
-                <p class="card-text">...</p>
-                <a href="#" class="btn btn-primary" onclick="">Buscador de Aprobados</a>
+                <p class="card-text">Tienes una lista con las notas finales de un curso
+                    Crea una variable contadorAprobados que inicie en 0.
+                    Recorre el arreglo con un for. Si la nota es 4.0 o superior,
+                    suma 1 al contador. Al terminar el ciclo.</p>
+                <a href="#" class="btn btn-primary" onclick="buscaAprobados()">Buscador de Aprobados</a>
                 <div Id="resultadoContainer3" class="mt-4 d-none">
                     <h5>Resultados:</h5>
                     <div Id="result3" class="alert alert-success fw-bold">
@@ -83,8 +93,11 @@
             <img src="." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Ejercicio 4</h5>
-                <p class="card-text">...</p>
-                <a href="#" class="btn btn-primary" onclick="">El Filtro de Inventario</a>
+                <p class="card-text">Una tienda quiere mostrar solo los productos que están disponibles.
+                    Recorre la lista con un ciclo for.
+                    Si el producto es diferente de "Agotado" (!==),
+                    agrégalo al texto del párrafo pantalla. Si dice "Agotado", sáltalo.</p>
+                <a href="#" class="btn btn-primary" onclick="filtroInventario()">El Filtro de Inventario</a>
                 <div Id="resultadoContainer4" class="mt-4 d-none">
                     <h5>Resultados:</h5>
                     <div Id="result4" class="alert alert-success fw-bold">
@@ -98,8 +111,11 @@
             <img src="." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Ejercicio 5</h5>
-                <p class="card-text">...</p>
-                <a href="#" class="btn btn-primary" onclick="">Limpieza de Datos</a>
+                <p class="card-text">Durante una actividad escolar se recolectaron
+                    distintos montos en dinero
+                    Crea una variable totalRecaudado que inicie en 0.
+                    Usa un ciclo for para sumar cada uno de los aportes a la variable total.</p>
+                <a href="#" class="btn btn-primary" onclick="sumandoColecta()">Limpieza de Datos</a>
                 <div Id="resultadoContainer5" class="mt-4 d-none">
                     <h5>Resultados:</h5>
                     <div Id="result5" class="alert alert-success fw-bold">
@@ -113,8 +129,11 @@
             <img src="." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Ejercicio 6</h5>
-                <p class="card-text">...</p>
-                <a href="#" class="btn btn-primary" onclick="">Acceso VIP</a>
+                <p class="card-text">Tienes una lista de usuarios
+                    Queremos mostrarlos en el HTML, pero destacando a algunos.
+                    Recorre el arreglo. Si el índice actual (i) es par,
+                    agrega la palabra " [VIP]" al lado de su nombre.</p>
+                <a href="#" class="btn btn-primary" onclick="FormateaNombres()">Acceso VIP</a>
                 <div Id="resultadoContainer6" class="mt-4 d-none">
                     <h5>Resultados:</h5>
                     <div Id="result6" class="alert alert-success fw-bold">
@@ -128,8 +147,13 @@
             <img src="." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Ejercicio 7</h5>
-                <p class="card-text">...</p>
-                <a href="#" class="btn btn-primary" onclick=""> Sistema de Calificaciones
+                <p class="card-text">Tienes un inventario
+                    Crea una variable articuloBuscado = "Cuaderno" y
+                    una variable vecesEncontrado = 0.
+                    Recorre la bodega con un for. Cada vez que el elemento de la lista sea igual al
+                    articuloBuscado, aumenta tu contador.
+                    Al final.</p>
+                <a href="#" class="btn btn-primary" onclick="BuscaStock()"> Sistema de Calificaciones
                     Chile</a>
                 <div Id="resultadoContainer7" class="mt-4 d-none">
                     <h5>Resultados:</h5>
@@ -144,8 +168,11 @@
             <img src="." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Ejercicio 8</h5>
-                <p class="card-text">...</p>
-                <a href="#" class="btn btn-primary" onclick="">Buscador de Invitados</a>
+                <p class="card-text">Lista de temperaturas registradas en una sala de servidores
+                    Queremos mostrar alertas solo para las temperaturas peligrosas.
+                    Usa .innerHTML en lugar de .textContent en tu párrafo.
+                    Recorre el arreglo. Si la temperatura es mayor a 30 escribe una alerta.</p>
+                <a href="#" class="btn btn-primary" onclick="parrafosAdvertencia()">Buscador de Invitados</a>
                 <div Id="resultadoContainer8" class="mt-4 d-none">
                     <h5>Resultados:</h5>
                     <div Id="result8" class="alert alert-success fw-bold">

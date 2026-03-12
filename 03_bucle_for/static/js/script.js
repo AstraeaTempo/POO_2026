@@ -8,7 +8,7 @@ agrega (concatena con +=) el número actual seguido de un guion
 
 function contadorPantalla() {
     let numeros = [];
-    const container = document.getElementById('resultadoContainer1')
+    const container = document.getElementById('resultadoContainer1');
     const resultado = document.getElementById('result1');
     for (let i = 1; i <= 10; i++) {
         numeros.push(i)
@@ -26,7 +26,13 @@ Usa un ciclo for para recorrer el arreglo. En cada iteración,
 agrega el nombre del estudiante al párrafo, separándolos por una coma y un espacio. */
 
 function asistenciaAutomatica() {
-    let curso = ["Ana", "Diego", "Sofía", "Matias"];
+    let curso = [" Ana", " Diego", " Sofía", " Matias"];
+    const container = document.getElementById('resultadoContainer2');
+    const resultado = document.getElementById('result2');
+    for (let i = 0; i < curso.length; i++) {
+        resultado.textContent += `${curso[i]},`
+    }
+    container.classList.remove('d-none');
 }
 
 /* 3. Buscador de Aprobados (Escala 1 a 7)
@@ -39,7 +45,12 @@ suma 1 al contador. Al terminar el ciclo, muestra en el párrafo pantalla:
 
 function buscaAprobados() {
     let notas = [3.5, 6.2, 5.0, 2.8, 4.5, 7.0];
+    const container = document.getElementById('resultadoContainer3');
+    const resultado = document.getElementById('result3');
+    for () {
 
+    }
+    container.classList.remove('d-none');
 }
 
 /* 4. El Filtro de Inventario
@@ -51,7 +62,12 @@ agrégalo al texto del párrafo pantalla. Si dice "Agotado", sáltalo. */
 
 function filtroInventario() {
     let productos = ["Teclado", "Mouse", "Agotado", "Monitor", "Agotado", "Audífonos"];
+    const container = document.getElementById('resultadoContainer4');
+    const resultado = document.getElementById('result4');
+    for () {
 
+    }
+    container.classList.remove('d-none');
 }
 
 /* 5. Sumando la Colecta
@@ -63,7 +79,12 @@ Al finalizar el ciclo, escribe en el párrafo: "La colecta reunió un total de: 
 
 function sumandoColecta() {
     let aportes = [1500, 2000, 500, 3000, 1000];
+    const container = document.getElementById('resultadoContainer5');
+    const resultado = document.getElementById('result5');
+    for () {
 
+    }
+    container.classList.remove('d-none');
 }
 
 /* 6. Formateador de Nombres VIP
@@ -75,7 +96,12 @@ y muéstralo en el párrafo. Si es impar, muéstralo normal. */
 
 function FormateaNombres() {
     let asistentes = ["carlos", "MARIA", "pedro", "LUCIA"];
+    const container = document.getElementById('resultadoContainer6');
+    const resultado = document.getElementById('result6');
+    for () {
 
+    }
+    container.classList.remove('d-none');
 }
 
 /* 7. El Buscador de Stock Específico
