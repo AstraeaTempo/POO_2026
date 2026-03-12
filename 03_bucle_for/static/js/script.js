@@ -90,13 +90,15 @@ Al finalizar el ciclo, escribe en el párrafo: "La colecta reunió un total de: 
 
 function sumandoColecta() {
     let aportes = [1500, 2000, 500, 3000, 1000];
+    let totalRecaudado = 0;
     const container = document.getElementById('resultadoContainer5');
     const resultado = document.getElementById('result5');
-    for (let i = 0; i < ) {
-
+    for (let i = 0; i < aportes.length; i++) {
+        totalRecaudado += aportes[i];
     }
+    resultado.textContent = `La coleta reunió un total de: ${totalRecaudado}`
     container.classList.remove('d-none');
-}
+};
 
 /* 6. Formateador de Nombres VIP
 Tienes una lista de usuarios: let asistentes = ["carlos", "MARIA", "pedro", "LUCIA"];
