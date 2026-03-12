@@ -1,3 +1,5 @@
+// Inicio
+console.log("Conectado a js...");
 
 /* 1. El Contador en Pantalla
 Selecciona el párrafo con el id pantalla.
@@ -45,11 +47,15 @@ suma 1 al contador. Al terminar el ciclo, muestra en el párrafo pantalla:
 
 function buscaAprobados() {
     let notas = [3.5, 6.2, 5.0, 2.8, 4.5, 7.0];
+    let contadorAprobados = 0;
     const container = document.getElementById('resultadoContainer3');
     const resultado = document.getElementById('result3');
-    for () {
-
+    for (let i = 0; i < notas.length; i++) {
+        if (notas[i] >= 4.0) {
+            contadorAprobados++
+        }
     }
+    resultado.textContent = "Total de alumnos aprobados: " + contadorAprobados;
     container.classList.remove('d-none');
 }
 
