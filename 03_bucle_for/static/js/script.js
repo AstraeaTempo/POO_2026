@@ -135,7 +135,19 @@ se encuentra [veces] veces en la bodega". */
 
 function BuscaStock() {
     let bodega = ["Lápiz", "Cuaderno", "Goma", "Cuaderno", "Regla", "Cuaderno"];
+    let articuloBuscado = prompt("Ingresa el articulo que buscas: ");
+    let vecesEncontrado = 0;
+    const container = document.getElementById('resultadoContainer7');
+    const result7 = document.getElementById('result7');
+    for (let i = 0; i < bodega.length; i++) {
+        if (articuloBuscado == bodega[i]) {
+            vecesEncontrado++
+        }
 
+    }
+    result7.textContent = `El articulo ${articuloBuscado} se 
+    encuentra ${vecesEncontrado} veces en la bodega`;
+    container.classList.remove('d-none');
 }
 
 /* 8. Generador de Párrafos de Advertencia
@@ -149,5 +161,13 @@ Recorre el arreglo. Si la temperatura es mayor a 30, inyecta en el párrafo:
 
 function parrafosAdvertencia() {
     let temperaturas = [22, 24, 28, 35, 21, 38];
+    const container = document.getElementById('resultadoContainer8');
+    const result8 = document.getElementById('result8');
+    for (let i = 0; i < temperaturas.length; i++) {
 
+    }
+
+
+    result8.textContent = resultado.join(" - ");
+    container.classList.remove('d-none');
 }
