@@ -11,11 +11,11 @@ agrega (concatena con +=) el número actual seguido de un guion
 function contadorPantalla() {
     let numeros = [];
     const container = document.getElementById('resultadoContainer1');
-    const resultado = document.getElementById('result1');
+    const result1 = document.getElementById('result1');
     for (let i = 1; i <= 10; i++) {
         numeros.push(i)
     }
-    resultado.textContent = `Container: ${numeros.join(" - ")}`;
+    result1.textContent = `Container: ${numeros.join(" - ")}`;
     container.classList.remove('d-none');
 }
 
@@ -30,9 +30,9 @@ agrega el nombre del estudiante al párrafo, separándolos por una coma y un esp
 function asistenciaAutomatica() {
     let curso = [" Ana", " Diego", " Sofía", " Matias"];
     const container = document.getElementById('resultadoContainer2');
-    const resultado = document.getElementById('result2');
+    const result2 = document.getElementById('result2');
     for (let i = 0; i < curso.length; i++) {
-        resultado.textContent += `${curso[i]},`
+        result2.textContent += `${curso[i]},`
     }
     container.classList.remove('d-none');
 }
@@ -49,13 +49,13 @@ function buscaAprobados() {
     let notas = [3.5, 6.2, 5.0, 2.8, 4.5, 7.0];
     let contadorAprobados = 0;
     const container = document.getElementById('resultadoContainer3');
-    const resultado = document.getElementById('result3');
+    const result3 = document.getElementById('result3');
     for (let i = 0; i < notas.length; i++) {
         if (notas[i] >= 4.0) {
             contadorAprobados++
         }
     }
-    resultado.textContent = "Total de alumnos aprobados: " + contadorAprobados;
+    result3.textContent = "Total de alumnos aprobados: " + contadorAprobados;
     container.classList.remove('d-none');
 }
 
@@ -69,15 +69,15 @@ agrégalo al texto del párrafo pantalla. Si dice "Agotado", sáltalo. */
 function filtroInventario() {
     let productos = ["Teclado", "Mouse", "Agotado", "Monitor", "Agotado", "Audífonos"];
     const container = document.getElementById('resultadoContainer4');
-    const resultado = document.getElementById('result4');
+    const result4 = document.getElementById('result4');
     let disponibles = [];
-    resultado.textContent = "";
+    result4.textContent = "";
     for (let i = 0; i < productos.length; i++) {
         if (productos[i] !== "Agotado") {
             disponibles.push[productos[i]]
         }
     }
-    resultado.textContent = `Productos disponibles: ${disponibles}`
+    result4.textContent = `Productos disponibles: ${disponibles}`
     container.classList.remove('d-none');
 }
 
@@ -92,11 +92,11 @@ function sumandoColecta() {
     let aportes = [1500, 2000, 500, 3000, 1000];
     let totalRecaudado = 0;
     const container = document.getElementById('resultadoContainer5');
-    const resultado = document.getElementById('result5');
+    const result5 = document.getElementById('result5');
     for (let i = 0; i < aportes.length; i++) {
         totalRecaudado += aportes[i];
     }
-    resultado.textContent = `La coleta reunió un total de: ${totalRecaudado}`
+    result5.textContent = `La coleta reunió un total de: ${totalRecaudado}`
     container.classList.remove('d-none');
 };
 
@@ -109,11 +109,17 @@ y muéstralo en el párrafo. Si es impar, muéstralo normal. */
 
 function FormateaNombres() {
     let asistentes = ["carlos", "MARIA", "pedro", "LUCIA"];
+    let resultado = [];
     const container = document.getElementById('resultadoContainer6');
-    const resultado = document.getElementById('result6');
-    for () {
-
+    const result6 = document.getElementById('result6');
+    for (let i = 0; i < asistentes.length; i++) {
+        if (i % 2 === 0) {
+            resultado.push(`${asistentes[i]} [VIP]`)
+        } else {
+            resultado.push(`${asistentes[i]} `)
+        }
     }
+    result6.textContent = resultado.join(" - ");
     container.classList.remove('d-none');
 }
 
