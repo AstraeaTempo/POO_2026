@@ -92,7 +92,7 @@ function sumandoColecta() {
     let aportes = [1500, 2000, 500, 3000, 1000];
     const container = document.getElementById('resultadoContainer5');
     const resultado = document.getElementById('result5');
-    for () {
+    for (let i = 0; i < ) {
 
     }
     container.classList.remove('d-none');
