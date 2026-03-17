@@ -111,3 +111,5 @@ Método // ¿Qué hace? // ¿Dónde actúa?
 .shift() // Elimina un elemento. // Al inicio de la lista.
 .includes() // Revisa si algo existe. // Devuelve true o false.
 .length // Cuenta los elementos. // Devuelve un número.
+
+.value nos va a ayudar a capturar la funcion.
