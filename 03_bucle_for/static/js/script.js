@@ -161,12 +161,15 @@ Recorre el arreglo. Si la temperatura es mayor a 30, inyecta en el párrafo:
 
 function parrafosAdvertencia() {
     let temperaturas = [22, 24, 28, 35, 21, 38];
+    let temperaturasPeligrosas = [];
     const container = document.getElementById('resultadoContainer8');
     const result8 = document.getElementById('result8');
     for (let i = 0; i < temperaturas.length; i++) {
-
+        if (temperaturas[i] >= 30 && temperaturas[i] < 50) {
+            result8.innerHTML += 
+            `<p class="text-danger">¡ALERTA! Temperatura crítica
+            de ${temperaturas[i]} grados.</p><br>`;
+        }
     }
-
-    result8.textContent = resultado.join(" - ");
     container.classList.remove('d-none');
 }
