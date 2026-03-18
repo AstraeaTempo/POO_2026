@@ -1,12 +1,18 @@
+/___________________________________________________________________________________________________/
 Usa .push() para agregar "increíble" al final.
 Usa .push() para agregar "borrar" al final.
 Usa .pop() para eliminar "borrar".
 Muestra con alert() la frase unida por espacios.
 
+/___________________________________________________________________________________________________/
+
 Guía Completa: Control de Flujo con if en JavaScript
 En la vida real, tomamos decisiones constantemente: “Si llueve, llevo paraguas; 
 si no, no”. En programación, esto se llama control de flujo, y la herramienta principal para 
 lograrlo es la estructura if.
+
+///-------------------------------------------------------------------------------///
+
 1. La base: ¿Qué es una condición?
 Una condición es una expresión que solo puede tener dos resultados: 
 verdadero (true) o falso (false).
@@ -14,12 +20,13 @@ Estructura del if simple
 Se utiliza cuando solo nos interesa actuar si algo es cierto.
 let saldo = 100;
 
-
 // La condición va entre paréntesis
 if (saldo > 0) {
   // El código dentro de las llaves solo se ejecuta si la condición es true
   console.log("Tienes dinero disponible.");
 }
+
+///-------------------------------------------------------------------------------///
 
 2. El camino alternativo: if...else
 ¿Qué pasa si la condición no se cumple? El bloque else (que significa "si no") 
@@ -28,12 +35,13 @@ o se va por un camino, o por el otro.
 Ejemplo: Validación de acceso
 let edad = 16;
 
-
 if (edad >= 18) {
   console.log("Acceso concedido. Eres mayor de edad.");
 } else {
   console.log("Acceso denegado. Eres menor de edad.");
 }
+
+///-------------------------------------------------------------------------------///
 
 3. Múltiples opciones: else if
 A veces la vida no es solo "blanco o negro". 
@@ -42,7 +50,6 @@ El programa las evalúa de arriba hacia abajo y se detiene en la primera que sea
 Ejemplo: Sistema de semáforo
 
 let luz = "amarillo";
-
 
 if (luz === "verde") {
   console.log("Puedes avanzar.");
@@ -54,9 +61,13 @@ if (luz === "verde") {
   console.log("Error: Color de luz no válido.");
 }
 
+///-------------------------------------------------------------------------------///
+
 4. Los "Jueces" de la lógica: Operadores de Comparación
 Para que el if funcione, necesitamos comparar valores. En JavaScript moderno, 
 usamos preferentemente la comparación estricta para evitar errores.
+
+///-------------------------------------------------------------------------------///
 
 5. Decisiones Complejas: Operadores Lógicos
 ¿Qué pasa si necesitas que se cumplan dos condiciones al mismo tiempo? 
@@ -67,27 +78,28 @@ JavaScript
 let tieneEntrada = true;
 let tieneEdadMinima = true;
 
-
 if (tieneEntrada && tieneEdadMinima) {
   console.log("Puedes entrar al festival.");
 }
+///-------------------------------------------------------------------------------///
 5.2 OR (||) - "O"
 Basta con que una de las condiciones sea verdadera.
 let esFinDeSemana = true;
 let esFeriado = false;
 
-
 if (esFinDeSemana || esFeriado) {
   console.log("¡Hoy puedes dormir hasta tarde!");
 }
+///-------------------------------------------------------------------------------///
 5.3 NOT (!) - Negación
 Invierte el valor de una condición. Convierte true en false y viceversa.
 let estaLloviendo = false;
 
-
 if (!estaLloviendo) {
   console.log("Saldré a correr.");
 }
+
+///-------------------------------------------------------------------------------///
 
 6. Buenas Prácticas (Clean Code)
 Para escribir código profesional y fácil de leer, sigue estos consejos:
@@ -101,6 +113,8 @@ No redundes con booleanos:
 Llaves siempre: Aunque el código sea de una sola línea, usa las llaves {}. 
 Evita errores cuando quieras agregar más líneas después.
 
+/___________________________________________________________________________________________________/
+
 Herramientas de consulta rápida
 Antes de empezar, recuerda cómo funcionan estos métodos:
 
@@ -113,3 +127,49 @@ Método // ¿Qué hace? // ¿Dónde actúa?
 .length // Cuenta los elementos. // Devuelve un número.
 
 .value nos va a ayudar a capturar la funcion.
+
+/___________________________________________________________________________________________________/
+
+/// DATO:
+
+--primero se crea la varieble luego se crea la funcion, la funcion es ejecutada por el boton, con la
+conts seleccionas algo del index.html, el if valida los datos, si esta vacio pasamos a else el cual
+va a dar una alerta. con "let nombre = input.value;" es una variable que esta guardando el nombre.
+con "let resultado = agredar----(nombre);" guarda el return
+
+//// Ejemplo de arriba ////
+
+///-------------------------------------------------------------------------------///
+let pacientes = ["Carlos", "María", "Diego"];
+function agregarUrgencia(nombre) {
+    pacientes.unshift(nombre);
+    return pacientes.join(", ");
+};
+
+function ingresarUrgencia() {
+    const container = document.getElementById("container2");
+    const result = document.getElementById("result2");
+    const input = document.getElementById("input2");
+    if (input.value !== "") {
+        let nombre = input.value;
+        let resultado = agregarUrgencia(nombre);
+        result.textContent = resultado;
+        input.value = "";
+        container.classList.remove("d-none");
+    } else {
+        alert("El nombre no puede estar vacio.")
+    };
+};
+///-------------------------------------------------------------------------------///
+
+function sumar(a, b) {
+    return a + b;
+}
+
+function sumarNumeros() {
+    let num1 = document.getElementById("input1");
+    let num2 = document.getElementById("input2");
+    let resultado = sumar(num1, num2);                ### Sumar es una funcion.
+    document.getElementById("contenedor").textContent = resultado;
+}
+sumar(2,5);
