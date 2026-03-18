@@ -12,10 +12,22 @@ Modifica el textContent del párrafo para mostrar: "Alumnos presentes: "
 seguido del arreglo. Limpia el input vaciando su .value.
  */
 
-function listarAsistencia() {
-    // input = ParseInt(input); --> Trasformar a número
-const input = document.getElementById("input1").Value;
+let asistencia = [];
+function agregarLista(nombre) {
+asistencia.push(nombre);
+return asistencia.join(", ");
+}
 
+function registrarAlumno() {
+    // input = ParseInt(input); --> Trasformar a número
+    const container = document.getElementById("container1");
+    const result = document.getElementById("result1");
+    const input = document.getElementById("input1");
+    let nombre = input.value;
+    let resultado = agregarLista(nombre);
+    result.textContent = resultado;
+    input.value = "";
+    container.classList.remove("d-none");
 }
 
 /* Ejercicio 2: Fila de Urgencias Médicas (unshift e if)
