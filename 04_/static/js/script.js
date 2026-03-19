@@ -74,7 +74,27 @@ Usa un else if. Si escribió "cancelar", usa .pop() para eliminar la última com
 Muestra en el textContent: "Pedidos pendientes: " seguido del arreglo.
 Limpia el input. */
 
+let entregas = ["Pizza", "Sushi", "Hamburguesa", "Ensalada"];
+function actualizarPedidos(pedido) {
+    if (pedido == "despachar") {
+        entregas.shift()
+    } else if (pedido == "cancelar") {
+        entregas.pop()
+    } else {
+        alert("Ingrese un valor valido")
+    }
+    return `Pedidos pendientes: ${entregas.join(", ")}`
+}
 
+function gestionarPedidos() {
+    const container = document.getElementById("container3");
+    const result = document.getElementById("result3");
+    const input = document.getElementById("input3").value;
+    let resultado = actualizarPedidos(input);
+        result.textContent = resultado;
+        input.value = "";
+        container.classList.remove("d-none");
+}
 
 /* Ejercicio 4: Validador de Códigos de Descuento (for e if)
 Contexto: Una tienda online revisa si el código promocional 
@@ -89,6 +109,7 @@ cambia la variable mensaje a "¡Éxito! Código aceptado".
 Fuera del ciclo, inyecta la variable mensaje en el textContent del párrafo.
 Limpia el input. */
 
+let codigosValidos = ["VERANO2026", "PROMO50", "CLIENTEVIP"];
 
 
 /* Ejercicio 5: Simulador de Cuotas (for)
