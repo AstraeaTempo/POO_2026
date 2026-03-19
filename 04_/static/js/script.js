@@ -113,8 +113,8 @@ let codigosValidos = ["VERANO2026", "PROMO50", "CLIENTEVIP"];
 
 function buscarCodigo(codigo) {
     let mensaje = "codigo invalido o expirado";
-    for (let i = 0; i < codigosValidos.length; i++){
-        if(codigo == codigosValidos[i]){
+    for (let i = 0; i < codigosValidos.length; i++) {
+        if (codigo == codigosValidos[i]) {
             mensaje = "¡exito! codigo aceptado";
             return "¡exito! codigo aceptado";
         } else {
@@ -147,7 +147,28 @@ En cada vuelta, súmale (+=) a registroPagos el producto y el número de la cuot
 Fuera del ciclo, muestra la variable registroPagos en el textContent del párrafo.
 Limpia el input. */
 
+function calcularCuotas() {
+let registroPagos = "";
+for (let i = 1; i <= 3; i++) {
+    registroPagos += ` | Cuota ${i} de ${valor/3}`;
+}
+return registroPagos;
+}
 
+function simularCuotas() {
+    const container = document.getElementById("container5");
+    const result = document.getElementById("result5");
+    const producto = document.getElementById("input5_1");
+    let valorProducto = parseInt(producto.value)
+    const cuotaInput = document.getElementById("input5_2");
+    let cuota = parseInt(cuotaInput.value)
+    let resultado
+
+    result.textContent = registroPagos;
+    producto.value = "";
+    cuota.value = "";
+    container.classList.remove("d-none");
+}
 
 /* Ejercicio 6: Filtro de Presupuesto (for e if)
 Contexto: Una vitrina virtual tiene varios precios. 
