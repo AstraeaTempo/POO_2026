@@ -147,23 +147,22 @@ En cada vuelta, súmale (+=) a registroPagos el producto y el número de la cuot
 Fuera del ciclo, muestra la variable registroPagos en el textContent del párrafo.
 Limpia el input. */
 
-function calcularCuotas() {
-let registroPagos = "";
-for (let i = 1; i <= 3; i++) {
-    registroPagos += ` | Cuota ${i} de ${valor/3}`;
-}
-return registroPagos;
-}
+function calcularCuota(valor, cuota) {
+    let registroPagos = "";
+    for (let i = 1; i <= 3; i++) {
+        registroPagos += `| Cuota ${i} de ${cuota}: ${valor / 3}`;
+    }
+    return registroPagos;
+};
 
 function simularCuotas() {
-    const container = document.getElementById("container5");
-    const result = document.getElementById("result5");
     const producto = document.getElementById("input5_1");
-    let valorProducto = parseInt(producto.value)
+    let valorProducto = parseInt(producto.value);
     const cuotaInput = document.getElementById("input5_2");
-    let cuota = parseInt(cuotaInput.value)
-    let resultado
-
+    let cuotas = parseInt(cuotaInput.value);
+    const result = document.getElementById("result5");
+    const container = document.getElementById("container5");
+    let resultado = calcularCuotas(valorProducto, cuota)
     result.textContent = registroPagos;
     producto.value = "";
     cuota.value = "";
