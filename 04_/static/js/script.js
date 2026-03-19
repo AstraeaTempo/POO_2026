@@ -91,9 +91,9 @@ function gestionarPedidos() {
     const result = document.getElementById("result3");
     const input = document.getElementById("input3").value;
     let resultado = actualizarPedidos(input);
-        result.textContent = resultado;
-        input.value = "";
-        container.classList.remove("d-none");
+    result.textContent = resultado;
+    input.value = "";
+    container.classList.remove("d-none");
 }
 
 /* Ejercicio 4: Validador de Códigos de Descuento (for e if)
@@ -111,6 +111,29 @@ Limpia el input. */
 
 let codigosValidos = ["VERANO2026", "PROMO50", "CLIENTEVIP"];
 
+function buscarCodigo(codigo) {
+    let mensaje = "codigo invalido o expirado";
+    for (let i = 0; i < codigosValidos.length; i++){
+        if(codigo == codigosValidos[i]){
+            mensaje = "¡exito! codigo aceptado";
+            return "¡exito! codigo aceptado";
+        } else {
+            mensaje = "ingresa un codigo valido";
+        }
+    }
+    return mensaje
+}
+
+function verificarCodigo() {
+    const container = document.getElementById("container4");
+    const result = document.getElementById("result4");
+    const input = document.getElementById("input4");
+    let codigo = input.value.toUpperCase();
+    let resultado = buscarCodigo(codigo);
+    result.textContent = resultado;
+    input.value = "";
+    container.classList.remove("d-none");
+}
 
 /* Ejercicio 5: Simulador de Cuotas (for)
 Contexto: Un cliente compra un producto y el sistema le genera automáticamente 
