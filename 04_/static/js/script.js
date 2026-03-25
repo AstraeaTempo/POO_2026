@@ -147,10 +147,10 @@ En cada vuelta, súmale (+=) a registroPagos el producto y el número de la cuot
 Fuera del ciclo, muestra la variable registroPagos en el textContent del párrafo.
 Limpia el input. */
 
-function calcularCuota(valor, cuota) {
+function calcularCuotas(valor, cuota) {
     let registroPagos = "";
     for (let i = 1; i <= 3; i++) {
-        registroPagos += `| Cuota ${i} de ${cuota}: ${valor / 3}`;
+        registroPagos += `Cuota ${i} de ${cuota}: ${parseInt(valor / 3)} |`;
     }
     return registroPagos;
 };
@@ -159,15 +159,15 @@ function simularCuotas() {
     const producto = document.getElementById("input5_1");
     let valorProducto = parseInt(producto.value);
     const cuotaInput = document.getElementById("input5_2");
-    let cuotas = parseInt(cuotaInput.value);
+    let cuota = parseInt(cuotaInput.value);
     const result = document.getElementById("result5");
     const container = document.getElementById("container5");
     let resultado = calcularCuotas(valorProducto, cuota)
-    result.textContent = registroPagos;
+    result.textContent = resultado;
     producto.value = "";
-    cuota.value = "";
+    cuotaInput.value = "";
     container.classList.remove("d-none");
-}
+};
 
 /* Ejercicio 6: Filtro de Presupuesto (for e if)
 Contexto: Una vitrina virtual tiene varios precios. 
@@ -183,7 +183,36 @@ igual (<=) a la plata que ingresó el cliente, súmalo a la variable opciones m�
 Muestra el resultado en el textContent del párrafo.
 Limpia el input. */
 
+let vitrina = [2500, 15000, 8000, 30000, 5000];
+let opciones = [];
+function comprobarPresupuesto(presupuesto) {
+    for (let i = 0; i <= vitrina.length; i++) {
+        if (presupuesto >= vitrina[i]) {
+            opciones.push(vitrina[i]);
+        };
+    };
+    if (opciones == "") {
+        return "No te alcanza para nada"
+    } else {
+        return `Te alcanza para los precios: ${opciones.join(" - ")}`
+    }
+};
 
+function filtrarPrecios() {
+    let input = document.getElementById("input6");
+    const container = document.getElementById("container6");
+    const result = document.getElementById("result6");
+    let dinero = parseInt(input.value);
+    if (isNaN(dinero)) {
+        alert("Ingresa valor válido");
+    } else {
+        let resultado = comprobarPresupuesto(dinero);
+        result.textContent = resultado;
+        input.value = "";
+        container.classList.remove("d-none");
+        opciones = [];
+    }
+};
 
 /* Ejercicio 7: Cálculo de Sueldo Líquido (Una función llama a otra)
 Contexto: El usuario ingresa su Sueldo Bruto. Una función matemática 
@@ -215,3 +244,4 @@ Al final de esta función, llama a actualizarPantalla() para que la vista se
 refresque automáticamente con el nuevo producto.
  */
 
+let carrito = [];
