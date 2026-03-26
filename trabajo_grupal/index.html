@@ -27,15 +27,14 @@
         </nav>
     </header>
 
-    <div class="container">
+    <div class="container p-2 d-flex gap-3 flex-wrap">
         <div class="card" style="width: 18rem;">
-
             <div class="card" style="width: 18rem;">
                 <img src="." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Ejercicio 1</h5>
                     <p class="card-text">.</p>
-                    <input type="text" class="form-control mb-3" id="input1" placeholder="Ingresar un numero: ">
+                    <input type="text" class="form-control mb-3" id="input1" placeholder="Ingresar un número: ">
                     <a href="#" class="btn btn-dark" onclick="verificarNumero()">boton1</a>
                     <div Id="container1" class="mt-4 d-none">
                         <h5>Resultados:</h5>
@@ -44,55 +43,56 @@
                     </div>
                 </div>
             </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Ejercicio 2</h5>
-                    <p class="card-text">.</p>
-                    <input type="text" class="form-control mb-3" id="input2" placeholder="Ingresar un nombre: ">
-                    <a href="#" class="btn btn-dark" onclick="multiplesCondiciones()">boton2</a>
-                    <div Id="container2" class="mt-4 d-none">
-                        <h5>Resultados:</h5>
-                        <div Id="result2" class="alert alert-success fw-bold">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Ejercicio 3</h5>
-                    <p class="card-text">.</p>
-                    <input type="text" class="form-control mb-3" id="input3" placeholder="Ingresar un nombre: ">
-                    <a href="#" class="btn btn-dark" onclick="distintosRoles()">boton3</a>
-                    <div Id="container3" class="mt-4 d-none">
-                        <h5>Resultados:</h5>
-                        <div Id="result3" class="alert alert-success fw-bold">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Ejercicio 4</h5>
-                    <p class="card-text">.</p>
-                    <input type="text" class="form-control mb-3" id="input4" placeholder="Ingresar un nombre: ">
-                    <a href="#" class="btn btn-dark" onclick="strings()">boton4</a>
-                    <div Id="container4" class="mt-4 d-none">
-                        <h5>Resultados:</h5>
-                        <div Id="result4" class="alert alert-success fw-bold">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
-        <script src="static/js/script.js"></script>
+        <div class="card" style="width: 18rem;">
+            <img src="." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 2</h5>
+                <p class="card-text">.</p>
+                <input type="text" class="form-control mb-3" id="input2" placeholder="Ingresar nota: ">
+                <a href="#" class="btn btn-dark" onclick="evaluarNota()">boton2</a>
+                <div Id="container2" class="mt-4 d-none">
+                    <h5>Resultados:</h5>
+                    <div Id="result2" class="alert alert-success fw-bold">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 3</h5>
+                <p class="card-text">.</p>
+                <input type="text" class="form-control mb-3" id="input3" placeholder="Ingresar un número: ">
+                <a href="#" class="btn btn-dark" onclick="procesarNumero()">boton3</a>
+                <div Id="container3" class="mt-4 d-none">
+                    <h5>Resultados:</h5>
+                    <div Id="result3" class="alert alert-success fw-bold">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 4</h5>
+                <p class="card-text">.</p>
+                <input type="text" class="form-control mb-3" id="input4" placeholder="Ingresar un palabra: ">
+                <a href="#" class="btn btn-dark" onclick="strings()">boton4</a>
+                <div Id="container4" class="mt-4 d-none">
+                    <h5>Resultados:</h5>
+                    <div Id="result4" class="alert alert-success fw-bold">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
 </body>
 
 </html>

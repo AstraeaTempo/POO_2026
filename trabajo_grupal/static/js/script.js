@@ -13,16 +13,21 @@ Si está vacío → mostrar: "Debes ingresar un número"
 Si tiene valor → mostrar: "Número ingresado correctamente" */
 
 
+function verificar(numero) {
+    if (isNaN(numero)) {
+        return "Debes ingresar un número valido";
+    } else {
+        return "Número ingresado correctamente";
+    }
+}
+
 function verificarNumero() {
     const container = document.getElementById("container1");
     const result = document.getElementById("result1");
     const input = document.getElementById("input1");
     let numero = parseInt(input.value);
-    if(isNaN(numero) || numero == "") {
-        result.textContent = "Debes ingresar un número valido";
-    } else {
-        result.textContent = "Número ingresado correctamente";
-    }
+    let validacion = verificar(numero)
+    result.textContent = validacion;
     container.classList.remove("d-none")
 }
 
@@ -40,28 +45,30 @@ Mostrar en pantalla:
 "Aprobado" si está entre 4.0 y 5.9
 "Sobresaliente" si es 6.0 o más */
 
-function evaluarNota() {
-    let notas = "";
-    for (let i = 0; i <= notas.length; i++) {
-        if (6.0 >= notas[i]) {
-        }
-    }
-    if (notas == "") {
+function nota(numero) {
+    if (numero >= 6.0 && numero <= 7.0) {
+        return "Sobresaliente"
+    } else if (numero <= 5.0 && numero >= 4.0) {
+        return "Aprobado"
+    } else if (numero >= 1.0 && numero <= 3.9) {
         return "Reprobado"
+    } else if (numero < 1.0 || numero > 7.0) {
+        return "Coloque una nota válida"
     } else {
-        return `Sobresaliente`
+        return "Ingrese un valor válido"
     }
 }
 
-function multiplesCondiciones() {
-    let input = document.getElementById("input2")
-    const container = document.getElementById("container2");
+function evaluarNota () {
     const result = document.getElementById("result2");
-    let numero = parseInt(input.value);
+    const container = document.getElementById("container2");
+    let input = document.getElementById("input2");
+    let numero = parseFloat(input.value);
+    let notas = nota(numero);
 
-    result.textContent = resultado;
     input.value = "";
-    container.classList.remove("d-none");
+    result.textContent = notas;
+    container.classList.remove("d-none")
 }
 
 /* Ejercicio 3: Uso de múltiples funciones (flujo completo)
@@ -88,22 +95,27 @@ Sugerencia didáctica (para tu clase)
 Puedes usar estos ejercicios como: */
 
 function calcularCuadrado(numero) {
+    verificarNumero(numero)
     return numero * numero;
-}
+};
 
 function calcularTriple(numero) {
     return numero * 3;
-}
+};
+
+fu
 
 function procesarNumero() {
-    let numero = document.getElementById("input3")
     const container = document.getElementById("container3");
     const result = document.getElementById("result3");
-
-    result.textContent = resultado;
+    let input = document.getElementById("input3");
+    let resultInput = parseInt(input.value);
+    let resultadoCuadrado = calcularCuadrado(resultInput);
+    let resultadoTriple = calcularTriple(resultInput);
     input.value = "";
+    result.textContent = `Cuadrado: ${resultadoCuadrado}, Triple: ${resultadoTriple}`;
     container.classList.remove("d-none");
-}
+};
 
 /* Ejercicio 4: Función que transforma texto
 Objetivo: Manipular strings desde un input.
