@@ -110,10 +110,18 @@ function calcularTriple(numero) {
     return numero * 3;
 }
 
-function distintosRoles() {
-    let input = document.getElementById("input3")
+function procesarNumero() {
+    let numero = document.getElementById("input3")
     const container = document.getElementById("container3");
     const result = document.getElementById("result3");
+    numero = Number(numero);
+
+    let cuadrado = calcularCuadrado(numero);
+    let triple = calcularTriple(numero);
+
+    document.getElementById("resultado").innerHTML =
+        "Cuadrado: " + cuadrado + "<br>Triple: " + triple;
+
 
     result.textContent = resultado;
     input.value = "";
