@@ -57,7 +57,7 @@ function multiplesCondiciones() {
     let input = document.getElementById("input2")
     const container = document.getElementById("container2");
     const result = document.getElementById("result2");
-    let numero = parse
+    let numero = parseInt(input.value);
 
     result.textContent = resultado;
     input.value = "";
