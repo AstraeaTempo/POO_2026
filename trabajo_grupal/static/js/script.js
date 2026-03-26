@@ -12,30 +12,18 @@ Verificar si está vacío
 Si está vacío → mostrar: "Debes ingresar un número"
 Si tiene valor → mostrar: "Número ingresado correctamente" */
 
-let numerosValidos = ["100000", "50000", "10000"];
 
-function verificarNumero(numero) {
-    let mensaje = "numero invalido o expirado";
-    for (let i = 0; i < numerosValidos.length; i++) {
-        if (numero == numerosValidos[i]) {
-            mensaje = "Número ingresado correctamente";
-            return "Número ingresado correctamente";
-        } else {
-            mensaje = "Debes ingresar un número";
-        }
-    }
-    return mensaje
-}
-
-function validarEntradas() {
+function verificarNumero() {
     const container = document.getElementById("container1");
     const result = document.getElementById("result1");
     const input = document.getElementById("input1");
-    let numero = input.value.toUpperCase();
-    let resultado = verificarNumero(numero);
-    result.textContent = resultado;
-    input.value = "";
-    container.classList.remove("d-none");
+    let numero = parseInt(input.value);
+    if(isNaN(numero) || numero == "") {
+        result.textContent = "Debes ingresar un número valido";
+    } else {
+        result.textContent = "Número ingresado correctamente";
+    }
+    container.classList.remove("d-none")
 }
 
 /* Ejercicio 2: Función que usa condicional múltiple
@@ -69,10 +57,7 @@ function multiplesCondiciones() {
     let input = document.getElementById("input2")
     const container = document.getElementById("container2");
     const result = document.getElementById("result2");
-    let notas = parseInt(input.value);
-    if (f) {
-
-    }
+    let numero = parse
 
     result.textContent = resultado;
     input.value = "";
@@ -114,14 +99,6 @@ function procesarNumero() {
     let numero = document.getElementById("input3")
     const container = document.getElementById("container3");
     const result = document.getElementById("result3");
-    numero = Number(numero);
-
-    let cuadrado = calcularCuadrado(numero);
-    let triple = calcularTriple(numero);
-
-    document.getElementById("resultado").innerHTML =
-        "Cuadrado: " + cuadrado + "<br>Triple: " + triple;
-
 
     result.textContent = resultado;
     input.value = "";
@@ -149,7 +126,7 @@ function strings() {
     let input = document.getElementById("input4");
     const container = document.getElementById("container4");
     const result = document.getElementById("result4");
-    let = input.value.strings.toUpperCase();
+    let resultado = input.value.toUpperCase();
 
     result.textContent = resultado;
     input.value = "";
