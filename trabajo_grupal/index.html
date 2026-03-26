@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+
+            <div class="card" style="width: 18rem;">
+                <img src="." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicio 1</h5>
+                    <p class="card-text">.</p>
+                    <input type="text" class="form-control mb-3" id="input1" placeholder="Ingresar un numero: ">
+                    <a href="#" class="btn btn-dark" onclick="validarEntradas()">boton1</a>
+                    <div Id="container1" class="mt-4 d-none">
+                        <h5>Resultados:</h5>
+                        <div Id="result1" class="alert alert-success fw-bold">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicio 2</h5>
+                    <p class="card-text">.</p>
+                    <input type="text" class="form-control mb-3" id="input2" placeholder="Ingresar un nombre: ">
+                    <a href="#" class="btn btn-dark" onclick="multiplesCondiciones()">boton2</a>
+                    <div Id="container2" class="mt-4 d-none">
+                        <h5>Resultados:</h5>
+                        <div Id="result2" class="alert alert-success fw-bold">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicio 3</h5>
+                    <p class="card-text">.</p>
+                    <input type="text" class="form-control mb-3" id="input3" placeholder="Ingresar un nombre: ">
+                    <a href="#" class="btn btn-dark" onclick="distintosRoles()">boton3</a>
+                    <div Id="container3" class="mt-4 d-none">
+                        <h5>Resultados:</h5>
+                        <div Id="result3" class="alert alert-success fw-bold">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ejercicio 4</h5>
+                    <p class="card-text">.</p>
+                    <input type="text" class="form-control mb-3" id="input4" placeholder="Ingresar un nombre: ">
+                    <a href="#" class="btn btn-dark" onclick="strings()">boton4</a>
+                    <div Id="container4" class="mt-4 d-none">
+                        <h5>Resultados:</h5>
+                        <div Id="result4" class="alert alert-success fw-bold">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="static/js/script.js"></script>
+</body>
+
+</html>
