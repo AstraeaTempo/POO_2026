@@ -62,3 +62,8 @@ Lógica: Tener un arreglo con al menos 6 nombres. Usar un ciclo for para
 buscar si el dato ingresado existe en la lista.
 Regla: La función debe devolver "Beneficiario Verificado" o "No registrado". */
 
+function buscaBeneficios() {
+let rut = ["12.395.351-1", "25.895.364-2", "98.516.204-3", "11.007.387-4", "32.654.099-5", "53.728.435-6"];
+let personas = ["Maria", "Sofia", "Alfredo", "Luigi", "william", "Clara"];
+
+}
