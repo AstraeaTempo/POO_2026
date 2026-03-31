@@ -110,7 +110,7 @@ y muéstralo en el párrafo. Si es impar, muéstralo normal. */
 function FormateaNombres() {
     let asistentes = ["carlos", "MARIA", "pedro", "LUCIA"];
     let resultado = [];
-    const container = document.getElementById('resultadoContainer6');
+    const container = document.getElementById('container6');
     const result6 = document.getElementById('result6');
     for (let i = 0; i < asistentes.length; i++) {
         if (i % 2 === 0) {
