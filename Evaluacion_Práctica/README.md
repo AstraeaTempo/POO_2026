@@ -7,7 +7,11 @@
 ---
 *ejercicio 1*
 
-*En *
+*En function que es una funcion principal coloque varios elementos que van conectados en el html
+pero una linea en especifico esta vinculada a otra funcion que es la que hace que todo funcione.
+la funcion principal ya mencionada va conectada en html para que funcione lo que es en este caso un boton.
+cabe mencionar que no recuerdo como hacer lo de los porcentajes y por ende, el codigo muestra lo 
+principal pero no el porcentaje requerido*
 
 
 ---
@@ -22,4 +26,4 @@ container y result conectamos el js con el div o un boton especifico en html.*
 ---
 *ejercicio 3*
 
-*profe siendole sincera no recuerdo como se hacia este ejercicio*
+*profe siendole sincera no recuerdo ni se como se hacia este ejercicio*

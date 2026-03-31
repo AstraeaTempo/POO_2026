@@ -21,7 +21,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navegador navbar-expand-lg">
             <div class="container-fluid">
                 <h1 class="titulo">Motor Lógico del Portal Municipal</h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -35,12 +35,11 @@
 
     <div class="container p-2 d-flex gap-3 flex-wrap">
         <div class="card" style="width: 18rem;">
-            <img src="." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Ejercicio 1</h5>
-                <p class="card-text">.</p>
+                <p class="card-text">Módulo de Tesorería</p>
                 <input type="text" class="form-control mb-3" id="input1" placeholder="Ingresar una cantidad: ">
-                <a href="#" class="btn btn-dark" onclick="pagoPermisos()">Permisos de circulación</a>
+                <a href="#" class="btn btn-primary" onclick="pagoPermisos()">Permisos de circulación</a>
                 <div Id="container1" class="mt-4 d-none">
                     <h5>Resultados:</h5>
                     <div Id="result1" class="alert alert-success fw-bold">
@@ -50,12 +49,11 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Ejercicio 2</h5>
-                <p class="card-text">.</p>
+                <p class="card-text">Módulo de Salud</p>
                 <input type="text" class="form-control mb-3" id="input2" placeholder="Ingresar nombre: ">
-                <a href="#" class="btn btn-dark" onclick="filaVacunacion()">Fila de Vacunación</a>
+                <a href="#" class="btn btn-primary" onclick="filaVacunacion()">Fila de Vacunación</a>
                 <div Id="container2" class="mt-4 d-none">
                     <h5>Resultados:</h5>
                     <li>
@@ -68,13 +66,12 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Ejercicio 3</h5>
-                <p class="card-text">.</p>
+                <p class="card-text">Módulo de Subsidios</p>
                 <input type="text" class="form-control mb-3" id="input3_1" placeholder="Ingresar un nombre: ">
                 <input type="text" class="form-control mb-3" id="input3_2" placeholder="Ingresar su RUT: ">
-                <a href="#" class="btn btn-dark" onclick="buscadorbeneficiador()">listado de entrega</a>
+                <a href="#" class="btn btn-primary" onclick="buscadorbeneficiador()">listado de entrega</a>
                 <div Id="container3" class="mt-4 d-none">
                     <h5>Resultados:</h5>
                     <div Id="result3" class="alert alert-success fw-bold">
@@ -83,7 +80,7 @@
             </div>
         </div>
     </div>
-
+    
     <script src="static/js/script.js"></script>
 </body>
 
